@@ -1,0 +1,149 @@
+/***********************************************
+* Orange
+***********************************************/
+.theme-orange .pace .pace-activity,
+.theme-orange .sy-pager li.sy-active a,
+.theme-orange .post .post-tag,
+.theme-orange .page .post-tag,
+.theme-orange #features h4:after {
+  background: #FF6A00;
+}
+
+.theme-orange .navbar-libre .navbar-brand,
+.theme-orange .intro .content .prev:hover,
+.theme-orange .intro .content .next:hover,
+.theme-orange #footer .brand,
+.theme-orange #landing .brand,
+.theme-orange #styles .style a {
+  color: #FF6A00;
+}
+
+@media (min-width: 768px) {
+  .theme-orange .navbar-libre .navbar-nav > .active > a:after {
+    background: #FF6A00;
+  }
+}
+
+.theme-orange .intro .content .intro-head {
+  border-left: 4px solid #FF6A00;
+}
+
+/***********************************************
+* Green
+***********************************************/
+.theme-green .pace .pace-activity,
+.theme-green .sy-pager li.sy-active a,
+.theme-green .post .post-tag,
+.theme-green .page .post-tag,
+.theme-green #features h4:after {
+  background: #00D420;
+}
+
+.theme-green .navbar-libre .navbar-brand,
+.theme-green .intro .content .prev:hover,
+.theme-green .intro .content .next:hover,
+.theme-green #footer .brand,
+.theme-green #landing .brand,
+.theme-green #styles .style a {
+  color: #00D420;
+}
+
+@media (min-width: 768px) {
+  .theme-green .navbar-libre .navbar-nav > .active > a:after {
+    background: #00D420;
+  }
+}
+
+.theme-green .intro .content .intro-head {
+  border-left: 4px solid #00D420;
+}
+
+/***********************************************
+* Red
+***********************************************/
+.theme-red .pace .pace-activity,
+.theme-red .sy-pager li.sy-active a,
+.theme-red .post .post-tag,
+.theme-red .page .post-tag,
+.theme-red #features h4:after {
+  background: #FF3425;
+}
+
+.theme-red .navbar-libre .navbar-brand,
+.theme-red .intro .content .prev:hover,
+.theme-red .intro .content .next:hover,
+.theme-red #footer .brand,
+.theme-red #landing .brand,
+.theme-red #styles .style a {
+  color: #FF3425;
+}
+
+@media (min-width: 768px) {
+  .theme-red .navbar-libre .navbar-nav > .active > a:after {
+    background: #FF3425;
+  }
+}
+
+.theme-red .intro .content .intro-head {
+  border-left: 4px solid #FF3425;
+}
+
+/***********************************************
+* Blue
+***********************************************/
+.theme-blue .pace .pace-activity,
+.theme-blue .sy-pager li.sy-active a,
+.theme-blue .post .post-tag,
+.theme-blue .page .post-tag,
+.theme-blue #features h4:after {
+  background: #1067B2;
+}
+
+.theme-blue .navbar-libre .navbar-brand,
+.theme-blue .intro .content .prev:hover,
+.theme-blue .intro .content .next:hover,
+.theme-blue #footer .brand,
+.theme-blue #landing .brand,
+.theme-blue #styles .style a {
+  color: #1067B2;
+}
+
+@media (min-width: 768px) {
+  .theme-blue .navbar-libre .navbar-nav > .active > a:after {
+    background: #1067B2;
+  }
+}
+
+.theme-blue .intro .content .intro-head {
+  border-left: 4px solid #1067B2;
+}
+
+/***********************************************
+* Yellow
+***********************************************/
+.theme-yellow .pace .pace-activity,
+.theme-yellow .sy-pager li.sy-active a,
+.theme-yellow .post .post-tag,
+.theme-yellow .page .post-tag,
+.theme-yellow #features h4:after {
+  background: #FFC500;
+}
+
+.theme-yellow .navbar-libre .navbar-brand,
+.theme-yellow .intro .content .prev:hover,
+.theme-yellow .intro .content .next:hover,
+.theme-yellow #footer .brand,
+.theme-yellow #landing .brand,
+.theme-yellow #styles .style a {
+  color: #FFC500;
+}
+
+@media (min-width: 768px) {
+  .theme-yellow .navbar-libre .navbar-nav > .active > a:after {
+    background: #FFC500;
+  }
+}
+
+.theme-yellow .intro .content .intro-head {
+  border-left: 4px solid #FFC500;
+}

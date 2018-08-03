@@ -210,10 +210,14 @@ MEDIA_URL = STATIC_URL + "media/"
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
+#MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
 
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
+
+ENV_PATH = os.path.abspath(os.path.dirname(__file__))
+MEDIA_ROOT = os.path.join(ENV_PATH, 'media/')
+
 
 TEMPLATES = [
     {
@@ -233,6 +237,8 @@ TEMPLATES = [
                 "django.template.context_processors.tz",
                 "mezzanine.conf.context_processors.settings",
                 "mezzanine.pages.context_processors.page",
+                "django.contrib.messages.context_processors.messages",
+                "sekizai.context_processors.sekizai",
             ],
             "builtins": [
                 "mezzanine.template.loader_tags",
@@ -254,16 +260,27 @@ if DJANGO_VERSION < (1, 9):
 # APPLICATIONS #
 ################
 
-INSTALLED_APPS = (
+INSTALLED_APPS = [
     "club",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.redirects",
     "django.contrib.sessions",
-    "django.contrib.sites",
     "django.contrib.sitemaps",
     "django.contrib.staticfiles",
+    #'django.contrib.sites.apps.SitesConfig',
+    'django.contrib.sites',  # django 1.6.2+
+    'django.contrib.humanize',
+    'django_nyt',
+    'mptt',
+    'sekizai',
+    'sorl.thumbnail',
+    'wiki',
+    'wiki.plugins.attachments',
+    'wiki.plugins.notifications',
+    'wiki.plugins.images',
+    'wiki.plugins.macros',
     "mezzanine.boot",
     "mezzanine.conf",
     "mezzanine.core",
@@ -274,9 +291,11 @@ INSTALLED_APPS = (
     "mezzanine.galleries",
     "mezzanine.twitter",
     'modeltranslation',
-    #"django_extensions",
+    'mezza',
+    #'management',
+    # "django_extensions",
     # "mezzanine.accounts",
-)
+]
 
 # List of middleware classes to use. Order is important; in the request phase,
 # these middleware classes will be applied in the order given, and in the
